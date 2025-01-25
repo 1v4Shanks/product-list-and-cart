@@ -1,0 +1,144 @@
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.popup-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+  width: 35%;
+  max-height: 90%;
+  background-color: #fff;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: #f14a00;
+  border-radius: 5px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.popup-content h2 {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.popup-content .message {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.confirmed-order-details {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.confirmed-order-list {
+  list-style: none;
+}
+
+.confirmed-order-list li {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  position: relative;
+}
+
+.confirmed-order-list li img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.confirmed-items-box {
+  padding-left: 20px;
+}
+
+.confirmed-items-box h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.confirmed-price-box {
+  display: flex;
+}
+
+.confirmed-price-box .confirmed-quantity {
+  color: #f14a00;
+  font-size: 17px;
+}
+
+.confirmed-price-box .confirmed-price {
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.confirmed-price-box .confirmed-total-price-of-item {
+  position: absolute;
+  color: #000;
+  font-weight: 600;
+  right: 1%;
+  top: 40%;
+}
+
+.confirmed-order-total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.confirmed-order-total p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+}
+
+.confirmed-order-total .confirmed-total-price {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    width: 100%;
+  }
+
+  .popup-content h2 {
+    font-size: 45px;
+  }
+
+  .popup-content .message {
+    font-size: 19px;
+  }
+}
