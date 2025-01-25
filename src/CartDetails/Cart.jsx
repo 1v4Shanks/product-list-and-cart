@@ -38,7 +38,7 @@ export default function Cart({ items, handleRemove }) {
       <h2>Your Cart ({yourCart})</h2>
       {items.length === 0 ? (
         <>
-          <img src="/images/illustration-empty-cart.svg" alt="empty cart" />
+          <img src="./images/illustration-empty-cart.svg" alt="empty cart" />
           <p>Your added items will appear here</p>
         </>
       ) : (
@@ -70,7 +70,7 @@ export default function Cart({ items, handleRemove }) {
           </div>
           <div className="carbon-neutral">
             <img
-              src="/images/icon-carbon-neutral.svg"
+              src="./images/icon-carbon-neutral.svg"
               alt="icon-carbon-neutral"
             />
             <p>

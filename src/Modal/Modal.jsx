@@ -24,7 +24,7 @@ export default function Modal({ items, totalPrice, handlePopUp, showPopUp }) {
       <div className="popup-content">
         <img
           className="order-confirmed-logo"
-          src="/images/icon-order-confirmed.svg"
+          src="./images/icon-order-confirmed.svg"
           alt="order-confirmed-logo"
         />
         <h2>Order Confirmed</h2>

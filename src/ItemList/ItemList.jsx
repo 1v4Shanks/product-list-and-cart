@@ -86,7 +86,7 @@ export default function ItemList({
                   ) : (
                     <>
                       <img
-                        src="/images/icon-add-to-cart.svg"
+                        src="./images/icon-add-to-cart.svg"
                         alt="add to cart logo"
                         className="cart-logo"
                       />
